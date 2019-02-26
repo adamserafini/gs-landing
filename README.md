@@ -11,3 +11,6 @@ To update infra after changes to the stack:
 
     aws cloudformation update-stack --stack-name gs-landing --template-body file://$PWD/gs-landing.yaml
 
+## Deploy
+
+    aws s3 cp static s3://gs-landing/ --recursive --acl public-read

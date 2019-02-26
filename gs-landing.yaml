@@ -3,3 +3,6 @@ Resources:
     Type: AWS::S3::Bucket
     Properties:
       BucketName: gs-landing
+      WebsiteConfiguration:
+        IndexDocument: index.html
+        ErrorDocument: index.html
