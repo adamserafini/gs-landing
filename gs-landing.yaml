@@ -2,7 +2,7 @@ Resources:
   GearSpotterS3Bucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: gs-landing
+      BucketName: gearspotter.com
       WebsiteConfiguration:
         IndexDocument: index.html
         ErrorDocument: index.html
@@ -34,13 +34,3 @@ Resources:
           - 5 alt2.aspmx.l.google.com
           - 10 aspmx2.googlemail.com
           - 10 aspmx3.googlemail.com
-        - Name: www.gearspotter.com
-          Type: TXT
-          TTL: 60
-          ResourceRecords:
-          - "\"google-site-verification=zqp-XfyLM_-Y63YGVrq2gFz365kTWjhHlhjf9E6H7NU\""
-        - Name: www.gearspotter.com
-          Type: A
-          TTL: 60
-          ResourceRecords:
-          - 95.85.42.227

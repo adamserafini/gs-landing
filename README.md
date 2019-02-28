@@ -13,4 +13,4 @@ To update infra after changes to the stack:
 
 ## Deploy
 
-    aws s3 cp static s3://gs-landing/ --recursive --acl public-read
+    aws s3 cp static s3://gearspotter.com/ --recursive --acl public-read
