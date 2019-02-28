@@ -17,17 +17,17 @@ Resources:
       RecordSets:
         - Name: gearspotter.com
           Type: A
-          TTL: 60
-          ResourceRecords:
-          - 95.85.42.227
+          AliasTarget:
+            DNSName: s3-website.eu-central-1.amazonaws.com.
+            HostedZoneId: Z21DNDUVLTQW6Q
         - Name: gearspotter.com
           Type: TXT
-          TTL: 60
+          TTL: 86400
           ResourceRecords:
           - "\"google-site-verification=zqp-XfyLM_-Y63YGVrq2gFz365kTWjhHlhjf9E6H7NU\""
         - Name: gearspotter.com
           Type: MX
-          TTL: 60
+          TTL: 86400
           ResourceRecords:
           - 1 aspmx.l.google.com
           - 5 alt1.aspmx.l.google.com
